@@ -1,0 +1,32 @@
+.meal-card {
+  box-shadow:
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    0 6px 10px 0 hsla(0,0%,0%,0.14),
+    0 1px 18px 0 hsla(0,0%,0%,0.12),
+    0 3px 5px -1px hsla(0,0%,0%,0.2);
+
+  padding-bottom: 1rem;
+  background-color: #2B303D;
+}
+
+.meal-image {
+  width: 100%;
+  height: 100%;
+}
+
+.meal-image img {
+  max-width: 100%;
+  border-bottom: var(--background-color) solid 1px;
+}
+
+.meal-details {
+  margin: 1rem;
+}
+
+.meal-title {
+  font-size: 1.4rem;
+}
+
+.meal-tag {
+  margin-right: 0.5rem;
+}
