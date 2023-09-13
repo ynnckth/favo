@@ -1,0 +1,7 @@
+<div>
+  <app-favourite-meal
+    *ngFor="let meal of getFavouriteMeals()"
+    [meal]="meal"
+    [correspondingEatery]="getEateryForMeal(meal)"
+  ></app-favourite-meal>
+</div>

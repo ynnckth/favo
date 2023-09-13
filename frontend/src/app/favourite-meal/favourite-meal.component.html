@@ -1,0 +1,23 @@
+<div *ngIf="meal">
+  <p>
+    <span>Eatery: {{ correspondingEatery?.name }}</span>
+    <br />
+    <span>Meal: {{ meal.name }}</span>
+  </p>
+  <ul>
+    <li>Price: ${{ meal.price }}</li>
+    <li>Rating: {{ meal.rating }}</li>
+    <li>
+      Comments:
+      <ul>
+        <li *ngFor="let comment of meal.comments">{{ comment }}</li>
+      </ul>
+    </li>
+    <li *ngIf="meal.tags.length > 0">
+      Tags:
+      <ul>
+        <li *ngFor="let tag of meal.tags">{{ tag }}</li>
+      </ul>
+    </li>
+  </ul>
+</div>
