@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Eatery, Meal } from '../favourites.service';
+import { Eatery, Meal } from '../eatery';
 
 @Component({
   selector: 'app-favourites-list',

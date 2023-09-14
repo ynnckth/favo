@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Eatery, FavouritesService } from './favourites.service';
+import { FavouritesService } from './favourites.service';
+import { Eatery } from './eatery';
 
 @Component({
   selector: 'app-root',

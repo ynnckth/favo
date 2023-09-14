@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { Eatery, Meal } from '../favourites.service';
 import {
   faUtensils,
   faLocationDot,
@@ -8,6 +7,7 @@ import {
   faComment,
   faHashtag,
 } from '@fortawesome/free-solid-svg-icons';
+import { Eatery, Meal } from '../eatery';
 
 @Component({
   selector: 'app-favourite-meal',
