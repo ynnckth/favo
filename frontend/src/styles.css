@@ -2,6 +2,7 @@
 :root {
   font-family: Google Sans,Roboto,HelveticaNeue,Arial,sans-serif;
   --background-color: #191F2C;
+  --secondary-color: #a5aab4;
 }
 
 html {
@@ -14,5 +15,5 @@ html {
 }
 
 .font-color-secondary {
-  color: #a5aab4;
+  color: var(--secondary-color);
 }

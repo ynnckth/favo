@@ -1,4 +1,4 @@
-<div class="meal-card" *ngIf="meal">
+<div class="meal-card" *ngIf="meal && correspondingEatery">
   <div class="meal-image">
     <img [src]="meal.pictureUrl" alt="Meal snapshot image" />
   </div>
@@ -6,9 +6,15 @@
     <p class="font-color-primary">
       <strong class="meal-title"><fa-icon [icon]="mealIcon"></fa-icon> {{ meal.name }}</strong>
       <br />
-      <span><fa-icon [icon]="eateryIcon"></fa-icon> {{ correspondingEatery?.name }}</span>
+      <span><fa-icon [icon]="eateryIcon"></fa-icon> {{ correspondingEatery.name }}</span>
     </p>
     <div class="font-color-secondary">
+      <p *ngIf="correspondingEatery.supportedDeliveryPlatforms.length > 0">
+        <span
+          ><fa-icon [icon]="deliveryIcon"></fa-icon>{{ " " }}
+          {{ correspondingEatery.supportedDeliveryPlatforms.join(", ") }}</span
+        >
+      </p>
       <p>
         <span><fa-icon [icon]="priceIcon"></fa-icon>{{ meal.price }}</span>
         <br />

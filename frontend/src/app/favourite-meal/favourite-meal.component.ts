@@ -6,6 +6,7 @@ import {
   faStar,
   faComment,
   faHashtag,
+  faPersonBiking,
 } from '@fortawesome/free-solid-svg-icons';
 import { Eatery, Meal } from '../eatery';
 
@@ -24,4 +25,5 @@ export class FavouriteMealComponent {
   ratingIcon = faStar;
   commentIcon = faComment;
   tagIcon = faHashtag;
+  deliveryIcon = faPersonBiking;
 }

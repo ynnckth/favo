@@ -1,7 +1,19 @@
-<div class="list">
-  <app-favourite-meal
-    *ngFor="let meal of getFavouriteMeals()"
-    [meal]="meal"
-    [correspondingEatery]="getEateryForMeal(meal)"
-  ></app-favourite-meal>
+<div class="list-container">
+  <div class="list">
+    <app-favourite-meal
+      *ngFor="let meal of getFavouriteMeals()"
+      [meal]="meal"
+      [correspondingEatery]="getEateryForMeal(meal)"
+    ></app-favourite-meal>
+  </div>
+  <div class="search">
+    <input
+      type="text"
+      placeholder="Search"
+      [(ngModel)]="searchTerm"
+      (input)="filterResults()"
+      #searchFilter
+      (keydown.escape)="searchFilter.blur(); resetSearchTerm()"
+    />
+  </div>
 </div>

@@ -49,4 +49,28 @@ export const mockEateries: Eatery[] = [
     ],
     tags: [],
   },
+  {
+    id: 'E003',
+    name: 'VIOS by Blu Kouzina',
+    country: 'Singapore',
+    city: 'Singapore',
+    locationDetails: 'HongKong St',
+    comments: [],
+    rating: 5,
+    canDineIn: false,
+    supportedDeliveryPlatforms: [DeliveryPlatform.DELIVEROO],
+    meals: [
+      {
+        id: 'M003',
+        name: 'The Guardian Bowl',
+        comments: [],
+        price: 18,
+        rating: 5,
+        pictureUrl:
+          'https://d3486jq6shjn6l.cloudfront.net/uploads/menu_items/d75ed088-b347-11e7-8211-06344bebedf3/medium_Vios-web-Gardian.jpg',
+        tags: ['healthy'],
+      },
+    ],
+    tags: ['healthy'],
+  },
 ];
