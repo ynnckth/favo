@@ -8,7 +8,7 @@ import {
   faHashtag,
   faPersonBiking,
 } from '@fortawesome/free-solid-svg-icons';
-import { Eatery, Meal } from '../eatery';
+import { Eatery, Meal } from '../types/eatery';
 
 @Component({
   selector: 'app-favourite-meal',

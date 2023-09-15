@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { mockEateries } from './mockdata';
-import { Eatery } from './eatery';
+import { Eatery } from './types/eatery';
 
 @Injectable({
   providedIn: 'root',

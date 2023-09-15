@@ -1,5 +1,5 @@
-import { DeliveryPlatform } from './deliveryPlatform';
-import { Eatery } from './eatery';
+import { DeliveryPlatform } from './types/deliveryPlatform';
+import { Eatery } from './types/eatery';
 
 export const mockEateries: Eatery[] = [
   {

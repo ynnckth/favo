@@ -1,20 +1,24 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { Eatery, Meal } from '../eatery';
+import { Component, OnInit } from '@angular/core';
+import { Eatery, Meal } from '../types/eatery';
+import { FavouritesService } from '../favourites.service';
 
 @Component({
   selector: 'app-favourites-list',
   templateUrl: './favourites-list.component.html',
   styleUrls: ['./favourites-list.component.css'],
 })
-export class FavouritesListComponent implements OnChanges {
-  @Input() eateries: Eatery[] = [];
+export class FavouritesListComponent implements OnInit {
+  eateries: Eatery[] = [];
   filteredEateries: Eatery[] = [];
   searchTerm: string = '';
 
-  ngOnChanges(changes: SimpleChanges): void {
-    if (changes['eateries']) {
-      this.filteredEateries = this.eateries;
-    }
+  constructor(private favouritesService: FavouritesService) {}
+
+  ngOnInit(): void {
+    this.favouritesService.getFavouriteEateries().subscribe((eateries) => {
+      this.eateries = eateries;
+      this.filteredEateries = eateries;
+    });
   }
 
   getFavouriteMeals(): Meal[] {
