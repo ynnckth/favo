@@ -1,8 +1,6 @@
 .list-container {
-  height: 100vh;
-  max-height: calc(100vh - 5rem);
-  overflow: scroll;
-  margin: 8px;
+  height: 100%;
+  margin: 8px 8px 5rem;
 }
 
 .list {
