@@ -10,7 +10,6 @@ export type Eatery = {
   city: string;
   locationDetails: string;
   comments: string[];
-  rating: number;
   canDineIn: boolean;
   supportedDeliveryPlatforms: DeliveryPlatform[];
   meals: Meal[];
@@ -22,7 +21,6 @@ export type Meal = {
   name: string;
   comments: string[];
   price: number;
-  rating: number;
   pictureUrl: string;
   tags: string[];
 };

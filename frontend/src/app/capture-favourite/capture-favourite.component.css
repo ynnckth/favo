@@ -1,0 +1,9 @@
+.capture-container {
+  color: #fafafa;
+  padding: 8px;
+}
+
+.capture-container input {
+  min-width: 15rem;
+  margin-bottom: 1rem;
+}

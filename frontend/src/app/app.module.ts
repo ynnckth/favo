@@ -5,13 +5,21 @@ import { AppComponent } from './app.component';
 import { FavouritesListComponent } from './favourites-list/favourites-list.component';
 import { FavouriteMealComponent } from './favourite-meal/favourite-meal.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CaptureFavouriteComponent } from './capture-favourite/capture-favourite.component';
 
 @NgModule({
-  declarations: [AppComponent, FavouritesListComponent, FavouriteMealComponent, HomeComponent, NavbarComponent],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, FormsModule],
+  declarations: [
+    AppComponent,
+    FavouritesListComponent,
+    FavouriteMealComponent,
+    HomeComponent,
+    NavbarComponent,
+    CaptureFavouriteComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

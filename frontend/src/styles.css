@@ -19,3 +19,18 @@ html, body {
 .font-color-secondary {
   color: var(--foreground-1);
 }
+
+input {
+  background-color: var(--background-1);
+  border: 1px solid var(--foreground-1);
+  border-radius: 5px;
+  height: 2rem;
+  padding-left: 0.5rem;
+  color: #fafafa;
+  font-size: 1rem;
+  box-shadow:
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    0 6px 10px 0 hsla(0,0%,0%,0.14),
+    0 1px 18px 0 hsla(0,0%,0%,0.12),
+    0 3px 5px -1px hsla(0,0%,0%,0.2);
+}

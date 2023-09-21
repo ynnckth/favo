@@ -1,6 +1,6 @@
 .list-container {
   height: 100%;
-  margin: 8px 8px 5rem;
+  padding: 8px 8px 5rem;
 }
 
 .list {
@@ -23,19 +23,10 @@
 }
 
 .search input {
-  background-color: var(--background-1);
-  border: 1px solid var(--foreground-1);
   border-radius: 20px;
   height: 2.5rem;
   width: 15rem;
   padding-left: 1rem;
-  color: #fafafa;
-  font-size: 1rem;
-  box-shadow:
-    /* offset-x | offset-y | blur-radius | spread-radius | color */
-    0 6px 10px 0 hsla(0,0%,0%,0.14),
-    0 1px 18px 0 hsla(0,0%,0%,0.12),
-    0 3px 5px -1px hsla(0,0%,0%,0.2);
 }
 
 

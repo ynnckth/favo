@@ -1,8 +1,12 @@
+<!-- TODO: replace routing with simple state setting of currently selected tab -->
 <div class="navbar">
   <a class="nav-item" [routerLink]="['/home']" routerLinkActive="active-link">
     <div><fa-icon [icon]="homeIcon"></fa-icon></div>
   </a>
   <a class="nav-item" [routerLink]="['/browse']" routerLinkActive="active-link">
     <div><fa-icon [icon]="browseIcon"></fa-icon></div>
+  </a>
+  <a class="nav-item" [routerLink]="['/capture']" routerLinkActive="active-link">
+    <div><fa-icon [icon]="captureIcon"></fa-icon></div>
   </a>
 </div>

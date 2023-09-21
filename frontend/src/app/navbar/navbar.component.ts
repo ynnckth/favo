@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faHouse, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faUtensils, faCirclePlus } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -8,5 +8,6 @@ import { faHouse, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 })
 export class NavbarComponent {
   homeIcon = faHouse;
-  browseIcon = faMagnifyingGlass;
+  browseIcon = faUtensils;
+  captureIcon = faCirclePlus;
 }

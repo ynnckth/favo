@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { FavouritesListComponent } from './favourites-list/favourites-list.component';
+import { CaptureFavouriteComponent } from './capture-favourite/capture-favourite.component';
 
 const routes: Routes = [
   {
@@ -14,13 +15,11 @@ const routes: Routes = [
     component: FavouritesListComponent,
     title: 'Browse',
   },
-  /*
-    {
-      path: 'capture',
-      component: CaptureFavouriteComponent,
-      title: 'Capture',
-    },
-     */
+  {
+    path: 'capture',
+    component: CaptureFavouriteComponent,
+    title: 'Capture',
+  },
 ];
 
 @NgModule({

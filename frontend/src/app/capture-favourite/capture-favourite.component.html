@@ -1,0 +1,15 @@
+<div class="capture-container">
+  <form [formGroup]="newFavouriteMealForm" (submit)="submitNewFavouriteMeal()">
+    <div>
+      <!-- TODO: dropdown with eateries, alternatively button to create new eatery -->
+      <select name="eateries">
+        <option *ngFor="let eatery of eateries">{{ eatery.name }}</option>
+      </select>
+
+      <input type="text" formControlName="eateryName" placeholder="Eatery name" />
+      <input type="text" formControlName="mealName" placeholder="Meal name" />
+    </div>
+
+    <button type="submit">Capture</button>
+  </form>
+</div>

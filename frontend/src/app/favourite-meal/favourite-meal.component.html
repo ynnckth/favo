@@ -17,8 +17,6 @@
       </p>
       <p>
         <span><fa-icon [icon]="priceIcon"></fa-icon>{{ meal.price }}</span>
-        <br />
-        <span><fa-icon [icon]="ratingIcon"></fa-icon>{{ meal.rating }}</span>
       </p>
       <div *ngIf="meal.comments.length > 0">
         <span *ngFor="let comment of meal.comments"><fa-icon [icon]="commentIcon"></fa-icon> {{ comment }}<br /></span>

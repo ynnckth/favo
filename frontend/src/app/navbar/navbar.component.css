@@ -25,6 +25,7 @@
   justify-content: center;
   text-decoration: none;
   color: inherit;
+  border: 0.01rem solid var(--background-1)
 }
 
 .active-link {
